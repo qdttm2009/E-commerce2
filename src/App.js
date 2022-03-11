@@ -1,14 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { products } from "./Data/data";
-import ProductCard from "./Components/ProductCard";
+
+import HomePage from "./Components/Page/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ProductCard />
-      </header>
+      <HomePage />
+      <button className="btn btn-primary">button</button>
     </div>
   );
 }
