@@ -1,13 +1,13 @@
 import React from "react";
 
 const displayPrice = (min, max, discount) => {
-  if (discount != 0) {
-    if (min == max)
+  if (discount !== 0) {
+    if (min === max)
       return (
         <div>
           <p>Discount: {discount * 100}%</p>
           <p>
-            {min - min * discount}$ (Old Price: {min}$){" "}
+            Price: {min - min * discount}$ (Old Price: {min}$)
           </p>
         </div>
       );
@@ -16,23 +16,23 @@ const displayPrice = (min, max, discount) => {
         <div>
           <p>Discount: {discount * 100}%</p>
           <p>
-            {min - min * discount}$ - {max - max * discount} (Old Price: {min}$
-            - {max}$){" "}
+            Price: {min - min * discount}$ -{max - max * discount}
+            (Old Price: {min}$ - {max}$)
           </p>
         </div>
       );
   } else {
-    if (min == max)
+    if (min === max)
       return (
         <div>
-          <p>{min - min * discount}$</p>
+          <p>Price: {min - min * discount}$</p>
         </div>
       );
     else
       return (
         <div>
           <p>
-            {min - min * discount}$ - {max - max * discount}$
+            Price: {min - min * discount}$ - {max - max * discount}$
           </p>
         </div>
       );

@@ -1,14 +1,24 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { products } from "./Data/data";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import HomePage from "./Components/Page/HomePage";
+import ProductDetail from "./Components/Page/ProductDetail";
+import LoginPage from "./Components/Page/LoginPage";
+import CartPage from "./Components/Page/CartPage";
+import SearchPage from "./Components/Page/SearchPage";
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
-      <button className="btn btn-primary">button</button>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<HomePage />} />
+          <Route path="/login" exact element={<LoginPage />} />
+          <Route path="/productdetail" exact element={<ProductDetail />} />
+          <Route path="/cart" exact element={<CartPage />} />
+          <Route path="/searchpage" exact element={<SearchPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
