@@ -1,14 +1,7 @@
 import React from "react";
 import displayPrice from "./displayPrice";
 
-const ProductCard = ({
-  id,
-  name,
-  discountMin,
-  discountMax,
-  discount,
-  images,
-}) => {
+const ProductCard = ({ name, discountMin, discountMax, discount, images }) => {
   return (
     <div>
       <img src={images} alt="" className="product__img" />

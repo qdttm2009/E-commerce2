@@ -2,10 +2,11 @@ import React from "react";
 import ProductList from "../ProductList";
 import Layout from "../Layout/Layout";
 
-export default function HomePage() {
+export default function ProductsPage() {
   return (
     <Layout>
-      <h1>HomePage</h1>
+      <div>Products</div>
+      <ProductList />
     </Layout>
   );
 }

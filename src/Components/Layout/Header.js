@@ -34,7 +34,7 @@ function Header(props) {
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                to="#"
+                to="/products"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -44,8 +44,8 @@ function Header(props) {
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
+                  <Link className="dropdown-item" to="/products">
+                    All Products
                   </Link>
                 </li>
                 <li>
