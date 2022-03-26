@@ -8,9 +8,10 @@ const SearchPage = () => {
   const location = useLocation();
   return (
     <Layout>
-      <div>SearchPage</div>
-      {console.log(location.state.searchTerm)}
+      <h1>SearchPage</h1>
+
       <ProductList searchTerm={location.state.searchTerm} />
+      {console.log(location.state.searchTerm)}
     </Layout>
   );
 };

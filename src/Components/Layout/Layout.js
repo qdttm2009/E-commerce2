@@ -12,8 +12,8 @@ function Layout(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     let path = "/searchpage";
-    searchTerm.toLowerCase();
-    navigate(path, { state: { searchTerm: searchTerm } });
+    navigate(path, { state: { searchTerm: searchTerm.toLowerCase() } });
+    console.log(searchTerm);
   };
 
   return (
@@ -29,7 +29,7 @@ function Layout(props) {
               placeholder="Tìm kiếm..."
               aria-label="Search"
             />
-            {console.log(searchTerm)}
+
             <button className="btn btn-outline-success" type="submit">
               Search
             </button>

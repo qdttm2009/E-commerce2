@@ -1,11 +1,13 @@
 import React from "react";
+
 import { products } from "../Data/data";
 
 import ProductCard from "./ProductCard";
 
 const ProductList = ({ searchTerm }) => {
+  console.log(searchTerm);
   return products
-    .filter((obj) => obj.name.toLocaleLowerCase().includes(searchTerm))
+    .filter((obj) => obj.name.toLocaleLowerCase().includes(searchTerm || ""))
     .map((product) => {
       const discount = product.discount;
 

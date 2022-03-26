@@ -5,7 +5,7 @@ import Layout from "../Layout/Layout";
 export default function ProductsPage() {
   return (
     <Layout>
-      <div>Products</div>
+      <h1>Products</h1>
       <ProductList />
     </Layout>
   );
